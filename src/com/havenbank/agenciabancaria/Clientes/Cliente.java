@@ -18,7 +18,7 @@ public class Cliente {
         this.CPF = CPF;
     }
 
-    public String cadastrar(String nomeCompleto, String emailCl, int CPF){
+    public void cadastrar(){
         System.out.print("Nome completo:");
         nomeCompleto = inputDate.nextLine();
         System.out.print("Email:");
@@ -35,6 +35,8 @@ public class Cliente {
         }else {
             System.out.println("As duas senhas precisam ser iguais!");
         }
-          return "...";
+
     }
+
+
 }
