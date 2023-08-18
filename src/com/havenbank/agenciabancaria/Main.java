@@ -1,4 +1,6 @@
-package com.havenbank.agenciabancaria.Clientes;
+package com.havenbank.agenciabancaria;
+
+import com.havenbank.agenciabancaria.Clientes.Cliente;
 
 public class Main {
     public static void main(String[]args){
