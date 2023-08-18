@@ -8,6 +8,8 @@ public class Cliente {
     private String nomeCompleto;
     private String emailCl;
     private int CPF;
+
+    public double ammount;
     private int password;
     private int confirmPassword;
 
@@ -36,6 +38,11 @@ public class Cliente {
             System.out.println("As duas senhas precisam ser iguais!");
         }
 
+    }
+
+    public String depositar (){
+
+        return "Deposito no valor de" +ammount+ "foi concluido com sucesso!!";
     }
 
 
