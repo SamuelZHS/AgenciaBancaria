@@ -42,6 +42,9 @@ public class Cliente {
 
     public String depositar (){
 
+        Double addValue = inputDate.nextDouble();
+        ammount =+ addValue;
+
         return "Deposito no valor de" +ammount+ "foi concluido com sucesso!!";
     }
 

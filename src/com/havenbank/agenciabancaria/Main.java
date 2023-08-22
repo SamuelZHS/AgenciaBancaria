@@ -8,7 +8,14 @@ public class Main {
         Cliente novo = new Cliente("Samuel", "Samuel.heleno.azevedo@gmail.com", 791);
 
 
-        novo.cadastrar();
+
+
+
+
+
+
+
+        novo.depositar();
 
 
 
