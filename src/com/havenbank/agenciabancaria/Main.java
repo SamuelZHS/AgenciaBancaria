@@ -2,20 +2,45 @@ package com.havenbank.agenciabancaria;
 
 import com.havenbank.agenciabancaria.Clientes.Cliente;
 
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[]args){
+    public static void main(String[]args) {
 
-        Cliente novo = new Cliente("Samuel", "Samuel.heleno.azevedo@gmail.com", 791);
-
-
-
+        Scanner input = new Scanner(System.in);
+        Cliente novo = new Cliente();
 
 
+            System.out.println("========= MENU ========");
+            System.out.println("1 - Cadastrar Conta");
+            System.out.println("2 - Depositar");
+            System.out.println("3 - Sacar");
+            System.out.println("4 - Mostrar Saldo");
+            System.out.println("5 - Sair");
+            int select = input.nextInt();
+
+            switch (select){
+                case 1:
+                    novo.cadastrar();
+
+                    break;
+                case 2:
+                    novo.depositar();
+
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+
+
+                    break;
+                case 5:
 
 
 
-
-        novo.depositar();
+                    break;
+            }
 
 
 

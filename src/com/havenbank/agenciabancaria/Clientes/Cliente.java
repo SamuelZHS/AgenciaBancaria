@@ -7,18 +7,11 @@ public class Cliente {
     Scanner  inputDate = new Scanner(System.in);
     private String nomeCompleto;
     private String emailCl;
-    private int CPF;
+    private String CPF;
 
-    public double ammount;
     private int password;
     private int confirmPassword;
 
-
-    public Cliente(String nomeCompleto, String emailCl, int CPF) {
-        this.nomeCompleto = nomeCompleto;
-        this.emailCl = emailCl;
-        this.CPF = CPF;
-    }
 
     public void cadastrar(){
         System.out.print("Nome completo:");
@@ -26,7 +19,7 @@ public class Cliente {
         System.out.print("Email:");
         emailCl = inputDate.nextLine();
         System.out.print("CPF:");
-        CPF = inputDate.nextInt();
+        CPF = inputDate.next();
         System.out.print("Senha:");
         password = inputDate.nextInt();
         System.out.print("Confirmar Senha:");
@@ -42,10 +35,13 @@ public class Cliente {
 
     public String depositar (){
 
-        Double addValue = inputDate.nextDouble();
-        ammount =+ addValue;
+        double addValue = inputDate.nextDouble();
+        double ammount =+ addValue;
 
         return "Deposito no valor de" +ammount+ "foi concluido com sucesso!!";
+    }
+    public void mostrarAmmount(double ammount){
+        return;
     }
 
 
