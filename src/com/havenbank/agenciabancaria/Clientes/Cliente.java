@@ -33,12 +33,17 @@ public class Cliente {
 
     }
 
-    public String depositar (){
+    public void depositar (){
 
+        System.out.println("Qual valor deseja depositar? ");
         double addValue = inputDate.nextDouble();
         double ammount =+ addValue;
 
-        return "Deposito no valor de" +ammount+ "foi concluido com sucesso!!";
+        if (addValue < 0){
+            System.out.println("O valor mínimo para deposito é 1$SS");
+        }else {
+            System.out.println("Deposito no valor de $" +ammount+ " foi concluido com sucesso!!");
+        }
     }
     public void mostrarAmmount(double ammount){
         return;
